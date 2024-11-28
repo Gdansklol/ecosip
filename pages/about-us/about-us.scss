@@ -1,0 +1,142 @@
+@import "../../partials/variables.scss";
+@import "../../partials/mixins.scss";
+
+body {
+    padding-top: $header-height;
+    font-family: $font-body;
+    background-color: $bg-color;
+    color: $text-main;
+  }
+  
+  .main-wrapper{
+      min-height: 170vh;
+      margin-bottom: 150px;
+  }
+
+h1, h2 {
+  font-family: $primaryText;
+  color: $main-color-dark;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+a {
+  color: $text-main;
+}
+
+.about-container {
+  padding: 20px;
+}
+
+.about-history,
+.company-motto,
+.team-section {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.company-motto {
+  .motto-text {
+    font-style: italic;
+    font-family: $primaryText; 
+    color: $main-color-dark; 
+  }
+}
+
+.about-us p {
+  color: $text-main;
+}
+
+.video-wrapper {
+  padding: 20px;
+  border: 5px solid $main-color;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  display: inline-block; 
+  background-color: $main-color-dark;
+  border-radius: 5px;
+  max-width: 320px; 
+  margin: 0 auto; 
+}
+
+.video-wrapper iframe {
+  width: 100%; 
+  height: auto; 
+  aspect-ratio: 16/9; 
+  border: none; 
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+  justify-content: flex-start;
+}
+
+.team-member {
+  text-align: left;
+  width: 100%; 
+  max-width: 250px; 
+  padding: 10px; 
+  margin: 0 auto; 
+  position: relative; 
+}
+
+.team-member img {
+  @include oval-border;
+  @include responsive-img;
+}
+
+.team-member h3 {
+  font-family: $primaryText;
+  color: $main-color-dark;
+}
+
+.team-member p {
+  font-family: $font-alt;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.team-member a {
+  color: $main-color;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin: 5px 0;
+}
+
+.team-member::after {
+  content: "";
+  position: absolute; 
+  top: 0; 
+  right: -3px; 
+  width: 3px; 
+  height: 100%; 
+  background-color: $secondary-color;
+}
+
+@media (min-width: $breakpoint-tablet) {
+  .team-member {
+    max-width: 200px;
+    padding: 10px; 
+  }
+
+  .team-members {
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .team-member {
+    max-width: 220px;
+  }
+}

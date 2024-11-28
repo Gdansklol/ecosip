@@ -1,0 +1,29 @@
+$primaryText: 'Poppins', sans-serif;// För rubriker (med Poppins som standard)
+$font-body: 'Roboto', sans-serif;// För brödtext (med Roboto)
+$font-alt: 'Lato', sans-serif;// Alternativ brödtext eller specifika delar (med Lato)
+$font-openSans: 'Open Sans', sans-serif;
+
+$bg-color: #E9EFEC; // Background color
+$text-main: #000000;   // Text color
+$text-secondary: #ffffff; // Text color
+$main-color: #273c34; // Main color
+$main-color-dark: #16423C; // Main color dark
+$secondary-color: #C4DAD2; // Secondary color
+$copy-color: #0b1a18; // Copywright color
+$navbar-color: #7CABA0; // Navbar hover color
+$button-hover: #6A9C89; // Button hover color
+ 
+
+$header-height: 120px; 
+$border-width: 2px;    
+
+// Media Query Breakpoint Variables
+$breakpoint-mobile: 375px;  // Mobile
+$breakpoint-tablet: 768px;  // Tablet
+$breakpoint-desktop: 1024px; // Desktop
+
+$breakpoints: (
+  mobile: $breakpoint-mobile,
+  tablet: $breakpoint-tablet,
+  desktop: $breakpoint-desktop,
+);

@@ -1,0 +1,137 @@
+body {
+  padding-top: 120px;
+  font-family: "Roboto", sans-serif;
+  background-color: #E9EFEC;
+  color: #000000;
+}
+
+.main-wrapper {
+  min-height: 170vh;
+  margin-bottom: 150px;
+}
+
+h1, h2 {
+  font-family: "Poppins", sans-serif;
+  color: #16423C;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #000000;
+}
+
+.about-container {
+  padding: 20px;
+}
+
+.about-history,
+.company-motto,
+.team-section {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 20px;
+}
+
+.company-motto .motto-text {
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  color: #16423C;
+}
+
+.about-us p {
+  color: #000000;
+}
+
+.video-wrapper {
+  padding: 20px;
+  border: 5px solid #273c34;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  background-color: #16423C;
+  border-radius: 5px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: none;
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.team-member {
+  text-align: left;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.team-member img {
+  border: 2px solid #273c34;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.team-member h3 {
+  font-family: "Poppins", sans-serif;
+  color: #16423C;
+}
+
+.team-member p {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.team-member a {
+  color: #273c34;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  margin: 5px 0;
+}
+
+.team-member::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -3px;
+  width: 3px;
+  height: 100%;
+  background-color: #C4DAD2;
+}
+
+@media (min-width: 768px) {
+  .team-member {
+    max-width: 200px;
+    padding: 10px;
+  }
+  .team-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .team-member {
+    max-width: 220px;
+  }
+}/*# sourceMappingURL=about-us.css.map */
